@@ -1,14 +1,23 @@
 package com.railtel.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+import com.railtel.model.Login;
+import com.railtel.service.LoginService;
+
+@RestController
 public class LoginController {
 	
-	@RequestMapping("")
-	public String loginPage() {
-		return  "login";
+	@Autowired LoginService  loginService;
+	
+	
+	@PostMapping("")
+	public Login loginPage(@RequestParam(name = "name") String name, @RequestParam(name = "password") String password) {
+		//loginService.get
+		return  loginService.checkLogin(name, password);
 	}
 	
 
