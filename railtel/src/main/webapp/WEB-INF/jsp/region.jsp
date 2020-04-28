@@ -10,17 +10,11 @@
 
 <title>Railtel | Region</title>
 
-<script
-	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-
-
-<script
-	src="app/ViewModels/region/Controller.js"></script>
-<script
-	src="app/ViewModels/region/Service.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="app/ViewModels/region/Controller.js"></script>
+<script src="app/ViewModels/region/Service.js"></script>
 <script src="app/constant.js"></script>
-<script
-	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 
 
 
@@ -53,8 +47,7 @@
 
 <body class="nav-md">
 
-	<div class="container body" ng-app="regionApp"
-		ng-controller="regionCtrl">
+	<div class="container body" ng-app="regionApp"  ng-controller="regionCtrl">
 		
 
 

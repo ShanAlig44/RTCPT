@@ -36,6 +36,11 @@ public class CompanyController {
 	public List<Company> regiaonList(@PathParam("region") String region) {
 		return  companyService.companyListByRegion(region);
 	}
+	
+	@GetMapping("company")
+	public Company companyById(@PathParam("id") Long id) {
+		return  companyService.companyById(id);
+	}
 
 
 }

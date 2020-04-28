@@ -32,6 +32,12 @@ public class CompanyServiceImp implements CompanyService{
 		return companydao.companyListByRegion(region);
 	}
 
+	@Override
+	public Company companyById(Long id) {
+		 
+		return companydao.companyById(id);
+	}
+
 
 
 }

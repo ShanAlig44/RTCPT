@@ -9,5 +9,6 @@ public interface CompanyService {
 
 	Boolean  createComany(CompanyRequest company);
 	List<Company>  companyListByRegion(String region);
+	Company companyById(Long id);
 	
 }

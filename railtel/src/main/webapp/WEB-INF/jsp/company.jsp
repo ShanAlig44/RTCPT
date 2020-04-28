@@ -10,6 +10,13 @@
 
   <title>Railtel | Company	</title>
 
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="app/ViewModels/company/Controller.js"></script>
+<script src="app/ViewModels/company/Service.js"></script>
+<script src="app/constant.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	
+
   <!-- Bootstrap core CSS -->
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -39,7 +46,7 @@
 
 <body class="nav-md">
 
-  <div class="container body">
+  <div class="container body" ng-app="cmpApp"  ng-controller="cmpCtrl">
 
 
     <div class="main_container">
@@ -273,21 +280,26 @@
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Region <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="region" class="form-control col-md-7 col-xs-12" name="region" required="required" type="text">
+                       <!--  <input id="region" class="form-control col-md-7 col-xs-12" name="region" required="required" type="text"> -->
+                       <select ng-model="region" class="form-control">
+													<option value="">--Select Region --</option>
+													<option ng-repeat="i in regions"
+														value="{{i.name}}">{{i.name}}</option>
+												</select>
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Name <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" name="name" required="required" type="text">
+                        <input id="name" class="form-control col-md-7 col-xs-12" name="name" ng-model="name" required="required" type="text">
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Concerned Executive <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="concerned_executive" name="email" required="required" class="form-control col-md-7 col-xs-12">
+                        <input type="text" id="concerned_executive" name="concerned_executive" ng-model="concernedExecutive" required="required" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                    
@@ -295,34 +307,34 @@
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Contact Number <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="number" id="contact_number" name="contact_number" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
+                        <input type="number" id="contact_number" name="contact_number" ng-model="contactNumber" required="required"  class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Email<span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="url" id="email" name="email" required="required" placeholder="xyz@domain.com" class="form-control col-md-7 col-xs-12">
+                        <input type="email" id="email" name="email" required="required"  ng-model="email" placeholder="xyz@domain.com" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                      <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">Address <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <textarea id="textarea" required="required" name="address" class="form-control col-md-7 col-xs-12"></textarea>
+                        <textarea id="textarea" required="required" name="address" ng-model="address" class="form-control col-md-7 col-xs-12"></textarea>
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="occupation">Tender No. <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="tender_number" type="text" name="tender_number" data-validate-length-range="5,20" class="optional form-control col-md-7 col-xs-12">
+                        <input id="tender_number" type="text" name="tender_number" ng-model="tenderNumber"  class="optional form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                     <div class="item form-group">
                       <label for="password" class="control-label col-md-3">PBG Amount</label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="pbg_amount" type="number" name="pbg_amount" data-validate-length="6,8" class="form-control col-md-7 col-xs-12" required="required">
+                        <input id="pbg_amount" type="number" name="pbg_amount"  ng-model="pbgAmount" class="form-control col-md-7 col-xs-12" required="required">
                       </div>
                     </div>
                     
@@ -330,28 +342,28 @@
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">PBG Issuing Bank <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <textarea id="pbg_issuing_bank" required="required" name="pbg_issuing_bank" class="form-control col-md-7 col-xs-12"></textarea>
+                        <textarea id="pbg_issuing_bank" required="required" ng-model="pbgIssueBank" name="pbg_issuing_bank" class="form-control col-md-7 col-xs-12"></textarea>
                       </div>
                     </div>
                     
                     <div class="item form-group">
                       <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">PBG Number</label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="pbg_number" type="text" name="pbg_number" class="form-control col-md-7 col-xs-12" required="required">
+                        <input id="pbg_number" type="text" name="pbg_number" ng-model="pbgNumber" class="form-control col-md-7 col-xs-12" required="required">
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">PBG Issue Date <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="date" id="pbg_issue_date" name="pbg_issue_date" required="required"  class="form-control col-md-7 col-xs-12">
+                        <input type="date" id="pbg_issue_date" name="pbg_issue_date" ng-model="pbgIssueDate" required="required"  class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">PBG Expiry Date <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="date" id="pbg_expiry_date" name="pbg_expiry_date" required="required"  class="form-control col-md-7 col-xs-12">
+                        <input type="date" id="pbg_expiry_date" name="pbg_expiry_date" ng-model="pbgExpireDate"  required="required"  class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                     
@@ -359,7 +371,7 @@
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">BG Ref No.<span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="bg_ref_number" name="bg_ref_number" required="required"  class="form-control col-md-7 col-xs-12">
+                        <input type="text" id="bg_ref_number" name="bg_ref_number" ng-model="bgRefNumber" required="required"  class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                     
@@ -367,7 +379,7 @@
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">PO No.<span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="text" id="po_number" name="po_number" required="required"  class="form-control col-md-7 col-xs-12">
+                        <input type="text" id="po_number" name="po_number" ng-model="poNumber" required="required"  class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
                     
@@ -377,7 +389,8 @@
                     <div class="form-group">
                       <div class="col-md-6 col-md-offset-3">
                         <!-- <button type="submit" class="btn btn-primary">Cancel</button> -->
-                        <button id="send" type="submit" class="btn btn-success">Submit</button>
+                       <!--  <button id="send" type="submit" class="btn btn-success">Submit</button> -->
+                       <a class="btn btn-default submit" ng-click=cmpSubmit()>Submit</a>
                       </div>
                     </div>
                   </form>
