@@ -631,7 +631,7 @@
 
         <footer>
           <div class="copyright-info">
-            <p class="pull-right">RAIL CORPORATION PVT. LTD.  
+            <p class="pull-right">RAITEL CORPORATION PVT. LTD.  
             </p>
           </div>
           <div class="clearfix"></div>
