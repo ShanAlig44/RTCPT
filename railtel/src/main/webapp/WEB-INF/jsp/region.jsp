@@ -8,7 +8,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Gentallela Alela! | </title>
+  <title>Railtel | Region	</title>
 
   <!-- Bootstrap core CSS -->
 
@@ -48,7 +48,7 @@
         <div class="left_col scroll-view">
 
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentellela Alela!</span></a>
+            <a href="dashboard" class="site_title"><i class="fa fa-paw"></i> <span>Railtel Corporation</span></a>
           </div>
           <div class="clearfix"></div>
 
@@ -56,76 +56,43 @@
           <!-- menu prile quick info -->
           <div class="profile">
             <div class="profile_pic">
-              <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              <img src="images/rail.png" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
-              <h2>John Doe</h2>
+              <h2>RCPL</h2>
             </div>
           </div>
           <!-- /menu prile quick info -->
 
           <br />
 
-          <!-- sidebar menu -->
+        <!-- sidebar menu -->
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
             <div class="menu_section">
-              <h3>General</h3>
+              <h3>Dashboard</h3>
               <ul class="nav side-menu">
                 <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="index.html">Dashboard</a>
+                    <li><a href="dashboard">Dashboard</a>
                     </li>
-                    <li><a href="index2.html">Dashboard2</a>
-                    </li>
-                    <li><a href="index3.html">Dashboard3</a>
-                    </li>
+                   
                   </ul>
                 </li>
-                <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+              <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="form.html">General Form</a>
-                    </li>
-                    <li><a href="form_advanced.html">Advanced Components</a>
-                    </li>
-                    <li><a href="form_validation.html">Form Validation</a>
-                    </li>
-                    <li><a href="form_wizards.html">Form Wizard</a>
-                    </li>
-                    <li><a href="form_upload.html">Form Upload</a>
-                    </li>
-                    <li><a href="form_buttons.html">Form Buttons</a>
-                    </li>
+                  <li><a href="region">Region</a></li>
+                  <li><a href="company">Company</a></li>
+                    <li><a href="channel_partner">Channel Partner</a></li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-desktop"></i> UI Elements <span class="fa fa-chevron-down"></span></a>
+                  <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                    <li><a href="general_elements.html">General Elements</a>
-                    </li>
-                    <li><a href="media_gallery.html">Media Gallery</a>
-                    </li>
-                    <li><a href="typography.html">Typography</a>
-                    </li>
-                    <li><a href="icons.html">Icons</a>
-                    </li>
-                    <li><a href="glyphicons.html">Glyphicons</a>
-                    </li>
-                    <li><a href="widgets.html">Widgets</a>
-                    </li>
-                    <li><a href="invoice.html">Invoice</a>
-                    </li>
-                    <li><a href="inbox.html">Inbox</a>
-                    </li>
-                    <li><a href="calender.html">Calender</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-table"></i> Tables <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="tables.html">Tables</a>
-                    </li>
-                    <li><a href="tables_dynamic.html">Table Dynamic</a>
+                   <li><a href="region">Region List</a></li>
+                	 <li><a href="company">Company List</a></li>
+                 
+                    <li><a href="channel-partner-list">Channel Partner List</a>
                     </li>
                   </ul>
                 </li>
@@ -133,58 +100,22 @@
                   <ul class="nav child_menu" style="display: none">
                     <li><a href="chartjs.html">Chart JS</a>
                     </li>
-                    <li><a href="chartjs2.html">Chart JS2</a>
+                    <li><a href="#">Chart JS2</a>
                     </li>
-                    <li><a href="morisjs.html">Moris JS</a>
+                    <li><a href="#">Moris JS</a>
                     </li>
-                    <li><a href="echarts.html">ECharts </a>
+                    <li><a href="#">ECharts </a>
                     </li>
-                    <li><a href="other_charts.html">Other Charts </a>
+                    <li><a href="#">Other Charts </a>
                     </li>
                   </ul>
                 </li>
               </ul>
             </div>
-            <div class="menu_section">
-              <h3>Live On</h3>
-              <ul class="nav side-menu">
-                <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="e_commerce.html">E-commerce</a>
-                    </li>
-                    <li><a href="projects.html">Projects</a>
-                    </li>
-                    <li><a href="project_detail.html">Project Detail</a>
-                    </li>
-                    <li><a href="contacts.html">Contacts</a>
-                    </li>
-                    <li><a href="profile.html">Profile</a>
-                    </li>
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-windows"></i> Extras <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu" style="display: none">
-                    <li><a href="page_404.html">404 Error</a>
-                    </li>
-                    <li><a href="page_500.html">500 Error</a>
-                    </li>
-                    <li><a href="plain_page.html">Plain Page</a>
-                    </li>
-                    <li><a href="login.html">Login Page</a>
-                    </li>
-                    <li><a href="pricing_tables.html">Pricing Tables</a>
-                    </li>
-
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a>
-                </li>
-              </ul>
-            </div>
-
+           
           </div>
           <!-- /sidebar menu -->
-
+     
           <!-- /menu footer buttons -->
           <div class="sidebar-footer hidden-small">
             <a data-toggle="tooltip" data-placement="top" title="Settings">
@@ -216,7 +147,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="">
                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                  <img src="images/img.jpg" alt="">John Doe
+                  <img src="images/rail.png" alt="">RCPL
                   <span class=" fa fa-angle-down"></span>
                 </a>
                 <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
@@ -231,7 +162,7 @@
                   <li>
                     <a href="javascript:;">Help</a>
                   </li>
-                  <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                  <li><a href="logout"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                   </li>
                 </ul>
               </li>
@@ -245,10 +176,10 @@
                   <li>
                     <a>
                       <span class="image">
-                                        <img src="images/img.jpg" alt="Profile Image" />
+                                        <img src="images/rail.png" alt="Profile Image" />
                                     </span>
                       <span>
-                                        <span>John Smith</span>
+                                        <span>RCPL</span>
                       <span class="time">3 mins ago</span>
                       </span>
                       <span class="message">
@@ -259,10 +190,10 @@
                   <li>
                     <a>
                       <span class="image">
-                                        <img src="images/img.jpg" alt="Profile Image" />
+                                        <img src="images/rail.png" alt="Profile Image" />
                                     </span>
                       <span>
-                                        <span>John Smith</span>
+                                        <span>RCPL</span>
                       <span class="time">3 mins ago</span>
                       </span>
                       <span class="message">
@@ -273,10 +204,10 @@
                   <li>
                     <a>
                       <span class="image">
-                                        <img src="images/img.jpg" alt="Profile Image" />
+                                        <img src="images/rail.png" alt="Profile Image" />
                                     </span>
                       <span>
-                                        <span>John Smith</span>
+                                        <span>RCPL</span>
                       <span class="time">3 mins ago</span>
                       </span>
                       <span class="message">
@@ -287,10 +218,10 @@
                   <li>
                     <a>
                       <span class="image">
-                                        <img src="images/img.jpg" alt="Profile Image" />
+                                        <img src="images/rail.png" alt="Profile Image" />
                                     </span>
                       <span>
-                                        <span>John Smith</span>
+                                        <span>RCPL</span>
                       <span class="time">3 mins ago</span>
                       </span>
                       <span class="message">
@@ -320,45 +251,16 @@
       <div class="right_col" role="main">
 
         <div class="">
-          <div class="page-title">
-            <div class="title_left">
-              <h3>
-                    Form Validation
-                </h3>
-            </div>
-
-            <div class="title_right">
-              <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Go!</button>
-                        </span>
-                </div>
-              </div>
-            </div>
-          </div>
+          
           <div class="clearfix"></div>
 
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="x_panel">
                 <div class="x_title">
-                  <h2>Form validation <small>sub title</small></h2>
+                  <h2>Region <small>form</small></h2>
                   <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Settings 1</a>
-                        </li>
-                        <li><a href="#">Settings 2</a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a class="close-link"><i class="fa fa-close"></i></a>
-                    </li>
+                    
                   </ul>
                   <div class="clearfix"></div>
                 </div>
@@ -366,82 +268,19 @@
 
                   <form class="form-horizontal form-label-left" novalidate>
 
-                    <p>For alternative validation library <code>parsleyJS</code> check out in the <a href="form.html">form page</a>
-                    </p>
-                    <span class="section">Personal Info</span>
-
+                    
                     <div class="item form-group">
                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">Name <span class="required">*</span>
                       </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="both name(s) e.g Jon Doe" required="required" type="text">
+                        <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name" placeholder="region" required="required" type="text">
                       </div>
                     </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Confirm Email <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="number">Number <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="number" id="number" name="number" required="required" data-validate-minmax="10,100" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="website">Website URL <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="url" id="website" name="website" required="required" placeholder="www.website.com" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="occupation">Occupation <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="occupation" type="text" name="occupation" data-validate-length-range="5,20" class="optional form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label for="password" class="control-label col-md-3">Password</label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="password" type="password" name="password" data-validate-length="6,8" class="form-control col-md-7 col-xs-12" required="required">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label for="password2" class="control-label col-md-3 col-sm-3 col-xs-12">Repeat Password</label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="password2" type="password" name="password2" data-validate-linked="password" class="form-control col-md-7 col-xs-12" required="required">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="telephone">Telephone <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="tel" id="telephone" name="phone" required="required" data-validate-length-range="8,20" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="textarea">Textarea <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <textarea id="textarea" required="required" name="textarea" class="form-control col-md-7 col-xs-12"></textarea>
-                      </div>
-                    </div>
+                    
                     <div class="ln_solid"></div>
                     <div class="form-group">
                       <div class="col-md-6 col-md-offset-3">
-                        <button type="submit" class="btn btn-primary">Cancel</button>
+                        <!-- <button type="submit" class="btn btn-primary">Cancel</button> -->
                         <button id="send" type="submit" class="btn btn-success">Submit</button>
                       </div>
                     </div>

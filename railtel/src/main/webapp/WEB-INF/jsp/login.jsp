@@ -66,9 +66,9 @@
               <div class="clearfix"></div>
               <br />
               <div>
-                <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Gentelella Alela!</h1>
+                <h1> Railtel Corporation Pvt. Ltd.</h1>
 
-                <p>©2015 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                <p>2020 All Rights Reserved. Railtel Corporation Pvt. Ltd.</p>
               </div>
             </div>
           </form>
@@ -90,7 +90,7 @@
               <input type="password" class="form-control" placeholder="Password" required="" />
             </div>
             <div>
-              <a class="btn btn-default submit" href="index.html">Submit</a>
+              <a class="btn btn-default submit" href="dashboard">Submit</a>
             </div>
             <div class="clearfix"></div>
             <div class="separator">
@@ -99,11 +99,10 @@
                 <a href="#tologin" class="to_register"> Log in </a>
               </p>
               <div class="clearfix"></div>
-              <br />
               <div>
-                <h1><i class="fa fa-paw" style="font-size: 26px;"></i> Gentelella Alela!</h1>
+                <h1> Railtel Corporation Pvt. Ltd.</h1>
 
-                <p>©2015 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                <p>2020 All Rights Reserved. Railtel Corporation Pvt. Ltd. </p>
               </div>
             </div>
           </form>

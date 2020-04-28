@@ -34,8 +34,33 @@ public class LoginController {
 		return  "dashboard";
 	}
 	
+	@RequestMapping("channel_partner")
+	public String channel_partner() {
+		return  "channel_partner";
+	}
 	
+	@RequestMapping("channel-partner-list")
+	public String channelPartnerList() {
+		return  "channel-partner-list";
+	}
 	
+	@RequestMapping("logout")
+	public String logout() {
+		return  "login";
+	}
+	@RequestMapping("region")
+	public String region() {
+		return  "region";
+	}
+	@RequestMapping("company")
+	public String company() {
+		return  "company";
+	}
+	
+	@RequestMapping("list-company")
+	public String companyList() {
+		return  "list-company";
+	}
 	
 
 }
