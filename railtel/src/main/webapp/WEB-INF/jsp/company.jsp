@@ -89,7 +89,7 @@
                 </li>
               <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                 
+                  <li><a href="region">region</a></li>
                   <li><a href="company">Company</a></li>
                     <li><a href="channel_partner">Channel Partner</a></li>
                   </ul>
@@ -390,7 +390,7 @@
                       <div class="col-md-6 col-md-offset-3">
                         <!-- <button type="submit" class="btn btn-primary">Cancel</button> -->
                        <!--  <button id="send" type="submit" class="btn btn-success">Submit</button> -->
-                       <a class="btn btn-default submit" ng-click=cmpSubmit()>Submit</a>
+                       <a class="btn btn-primary" ng-click=cmpSubmit()>Submit</a>
                       </div>
                     </div>
                   </form>

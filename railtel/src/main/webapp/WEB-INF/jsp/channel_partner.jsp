@@ -89,7 +89,7 @@
                 </li>
               <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
-                 
+                  <li><a href="region">region</a></li>
                   <li><a href="company">Company</a></li>
                     <li><a href="channel_partner">Channel Partner</a></li>
                   </ul>

@@ -257,7 +257,7 @@
 											<div class="col-md-6 col-md-offset-3">
 												<!-- <button type="submit" class="btn btn-primary">Cancel</button> -->
 												<!-- <button id="send" type="submit" class="btn btn-success" >Submit</button> -->
-												<a class="btn btn-default submit" ng-click=regionSubmit()>Submit</a>
+												<a class="btn btn-primary" ng-click=regionSubmit()>Submit</a>
 											</div>
 										</div>
 									</form>
