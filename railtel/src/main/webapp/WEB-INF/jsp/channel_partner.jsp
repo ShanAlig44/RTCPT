@@ -14,7 +14,7 @@
 <script src="app/ViewModels/channel-partner/Controller.js"></script>
 <script src="app/ViewModels/channel-partner/Service.js"></script>
 <script src="app/constant.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+ 
 	
 
   <!-- Bootstrap core CSS -->
@@ -46,7 +46,7 @@
 
 <body class="nav-md">
 
-  <div class="container body" ng-app="channelPartnerApp"  ng-controller="channelPartnerCtrl">
+  <div class="container body" ng-app="channelPartnerApp"  ng-controller="channelPartnerCtrl"> 
 
 
     <div class="main_container">

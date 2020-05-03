@@ -30,6 +30,19 @@ app.service("channelPartnerService", function ($http) {
 	}
 
 
+	this.getAllChannelPartner= function (data) {
+		return $http({
+			method: 'GET',
+			url:baseUrl+LIST_CHANNEL_PARTNER, 
+			contentType: 'application/json',
+			data: JSON.stringify(data),
+		});
+	}
+	
+	
+	
+	
+	
 
 
 

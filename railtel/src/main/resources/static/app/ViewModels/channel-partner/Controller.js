@@ -1,6 +1,45 @@
 var app = angular.module('channelPartnerApp', []);
 app.controller('channelPartnerCtrl', function(channelPartnerService,$scope,$location) {
 
+	
+	/*get all channel partner  */
+	
+	channelPartnerService.getAllChannelPartner().then(
+			function(response) {
+				debugger;
+				if (response.status == 200) {
+					    $scope.allChannelPartnerList   = response.data
+					    
+					    $(document).ready(function() {
+							$('#datatables').DataTable( {
+								dom: 'Bfrtip',
+								buttons: [{
+									extend: "copy",
+									className: "btn-sm"
+								}, {
+									extend: "csv",
+									className: "btn-sm"
+								}, {
+									extend: "excel",
+									className: "btn-sm"
+								}, {
+									extend: "pdf",
+									className: "btn-sm"
+								}, {
+									extend: "print",
+									className: "btn-sm"
+								}],
+								responsive: !0
+
+							} );
+						} );
+				}
+			}, function (er) {
+				if(er.status==400)
+					alert(er.data.responseDescription);
+			});
+	
+	
 	/*get all region */
 	
 	channelPartnerService.regionsList().then(
@@ -15,13 +54,9 @@ app.controller('channelPartnerCtrl', function(channelPartnerService,$scope,$loca
 			});
 	
 	
-
-	
 	$scope.cmpByRegion  = function(region) {
 		
-		var data = {
-				"region":region
-		}
+		var data = {"region":region	}
 		channelPartnerService.cmpByRegionList(data).then(
 				function(response) {
 					debugger;
