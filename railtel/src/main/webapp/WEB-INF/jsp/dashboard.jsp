@@ -99,6 +99,7 @@
 										<li><a href="list-company">Company List</a></li>
 										<li><a href="channel-partner-list">Channel Partner
 												List</a></li>
+										<li><a href="list-specialization">Specialization</a></li>
 									</ul></li>
 								<li><a><i class="fa fa-bar-chart-o"></i> Data
 										Presentation <span class="fa fa-chevron-down"></span></a>

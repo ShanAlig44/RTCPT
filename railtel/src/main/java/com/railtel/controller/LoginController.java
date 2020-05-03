@@ -55,5 +55,10 @@ public class LoginController {
 		return  "list-company";
 	}
 	
+	
+	@RequestMapping("list-specialization")
+	public String  listSpecialization() {
+		return  "list-specialization";
+	}
 
 }
